@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@conduit-ui/ui-components": ["libs/ui-components/src/index.ts"],
+      "@conduit-ui/ui-components/server": ["libs/ui-components/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

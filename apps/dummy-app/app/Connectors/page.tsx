@@ -1,5 +1,7 @@
 'use client';
 
+import { UiComponents } from '@conduit-ui/ui-components';
+
 export default async function Index() {
   return (
     <div className="wrapper">
@@ -9,6 +11,7 @@ export default async function Index() {
               Connectors page
             </h1>
           </div>
+          <UiComponents />
         </div>
       </div>
   );
