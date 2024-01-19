@@ -91,3 +91,16 @@ pre {
   line-height: 2.25rem;
   margin-bottom: 0.5rem;
 }
+#middle-content {
+  display: flex;
+  margin-top: 3.5rem;
+  gap: 4em;
+}
+.container-cmp {
+  flex: 1;
+  padding: 25px;
+}
+.container-cmp h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
