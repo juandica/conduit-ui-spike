@@ -1,6 +1,7 @@
 'use client';
 
 import styled from '@emotion/styled';
+import { Button } from '@conduit-ui/ui-components';
 
 const StyledPage = styled.div`
   .page {
@@ -28,6 +29,15 @@ export default async function Index() {
               <h1>
                 Normal components
               </h1>
+              <Button size='large' onClick={()=>{console.log("White button")}}>
+                White button
+              </Button>
+              <Button color='primary' size='large' onClick={()=>{console.log("Primary button")}}>
+                Primary button
+              </Button>
+              <Button color='error' size='large' onClick={()=>{console.log("Error button")}}>
+                Error button
+              </Button>
             </div>
             <div className="container-cmp rounded shadow">
               <h1>
