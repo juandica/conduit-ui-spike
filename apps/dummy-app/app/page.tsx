@@ -1,7 +1,8 @@
 'use client';
 
 import styled from '@emotion/styled';
-import { Button } from '@conduit-ui/ui-components';
+import { Button, MagneticButton } from '@conduit-ui/ui-components';
+import { Fish } from 'phosphor-react';
 
 const StyledPage = styled.div`
   .page {
@@ -26,23 +27,48 @@ export default async function Index() {
           </div>
           <div id="middle-content">
             <div className="container-cmp rounded shadow">
-              <h1>
-                Normal components
-              </h1>
-              <Button size='large' onClick={()=>{console.log("White button")}}>
+              <h1>Normal components</h1>
+              <Button
+                size="large"
+                onClick={() => {
+                  console.log('White button');
+                }}
+              >
                 White button
               </Button>
-              <Button color='primary' size='large' onClick={()=>{console.log("Primary button")}}>
+              <Button
+                color="primary"
+                size="large"
+                onClick={() => {
+                  console.log('Primary button');
+                }}
+              >
                 Primary button
               </Button>
-              <Button color='error' size='large' onClick={()=>{console.log("Error button")}}>
+              <Button
+                color="error"
+                size="large"
+                onClick={() => {
+                  console.log('Error button');
+                }}
+              >
                 Error button
               </Button>
             </div>
             <div className="container-cmp rounded shadow">
-              <h1>
-                Magnetic components
-              </h1>
+              <h1>Magnetic components</h1>
+              <MagneticButton variant="primary" block>
+                Primary button
+              </MagneticButton>
+              <MagneticButton variant="primary" block icon={<Fish />}>
+                Primary button with Icon
+              </MagneticButton>
+              <MagneticButton variant="secondary" block>
+                Secondary button
+              </MagneticButton>
+              <MagneticButton variant="ghost" sentiment="inverse" block>
+                Ghost button
+              </MagneticButton>
             </div>
           </div>
         </div>
