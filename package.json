@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve dummy-app"
+    "start": "nx serve dummy-app",
+    "lint:ui-components": "nx lint ui-components",
+    "build:ui-components": "nx build ui-components"
   },
   "private": true,
   "dependencies": {
